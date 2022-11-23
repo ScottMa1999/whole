@@ -1,0 +1,103 @@
+/********* FONTS  *********/
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+*, ::before, ::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/************** NAVIGARION BAR **************/
+.nav {
+  width: 100%;
+  height: 20vh;
+  position: relative;
+  background-color: black;
+}
+
+.navbar-aboutMe {
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  gap: 5rem;
+}
+
+ul a {
+  color: white;
+  text-decoration: none;
+}
+
+/*************** CONTENT #1 ***************/
+.about-content1 {
+  width: 100%;
+  height: 50vh;
+  position: relative;
+  background-color: white;
+  display: flex;
+}
+
+.about-content1::before {
+  content:'';
+  width: 100%;
+  height: 50vh;
+  position: absolute;
+  background-color: black;
+  z-index: 2;
+  border-radius: 0 0 80% 80%;
+}
+
+.about-content1::after {
+  content:'';
+  width: 60%;
+  height:49vh;
+  z-index: 3;
+  position: absolute;
+  background-image: url('./pic/man2.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  left: 19%;
+  bottom: 10%;
+
+}
+
+.about-content1-logos img {
+  position: absolute;
+  width: 2.5rem;
+  z-index: 5;
+}
+
+#linkedin-logo-white {
+  left: 46%;
+  bottom: 13%;
+  transform: translate(-50%, 50%);
+}
+
+#github-logo-white {
+  left: 50%;
+  bottom: 7%;
+}
+
+#Netify-logo-white {
+  left: 55%;
+  bottom: 8%;
+}
